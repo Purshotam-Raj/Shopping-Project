@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ShoppingProject';
+  selectedItem : string = 'recipe';
+
+  selectedView(value: string){
+
+    this.selectedItem = value;
+  }
 }
